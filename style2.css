@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.card {
+    width: 88%;
+    min-width: 330px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 75px;
+    overflow: hidden;
+}
+
+.card .card-header {
+    margin-bottom: 40px;
+}
+
+.card .card-header .img-card {
+    width: 100%;
+}
+
+.card .card-body, .card .footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card .card-body {
+    margin-bottom: 30px;
+}
+
+.card .card-body h2 {
+    font-family:'Manrope', sans-serif; 
+    font-weight: 700;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card .card-body p {
+    font-family:'Manrope', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: hsl(214, 17%, 51%);
+}
+
+.card .footer .avatar-container {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.card .footer .avatar-container .avatar{
+    width: 100%;
+}
+
+.card .footer .text-footer {
+    display: inline-block;
+}
+
+.card .footer .text-footer h3{
+    font-weight: 700;
+    font-family:'Manrope', sans-serif; 
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px; 
+    color: hsl(217, 19%, 35%); 
+}
+
+.card .footer .text-footer p{
+    font-weight: 500;
+    font-family:'Manrope', sans-serif; 
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+}
+
+.card .footer .circle-icono {
+    border-radius: 50%;
+    background: no-repeat hsl(210, 46%, 95%) url('/images/icon-share.svg') center center;
+    width: 30px;
+    height: 30px; 
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+.card .footer .circle-icono img { display: none; }

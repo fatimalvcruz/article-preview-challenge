@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+  
+}
+
+.card {
+    width: 88%;
+    min-width: 330px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 75px;
+    overflow: hidden;
+   
+}
+
+.card .card-header {
+    margin-bottom: 40px;
+  
+}
+
+.card .card-header .img-card {
+    width: 100%;
+   
+}
+
+.card .card-body, .card .footer1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card .card-body {
+    margin-bottom: 30px;
+}
+.card .card-body h2 {
+    font-family:'Manrope', sans-serif; 
+    font-weight: 700;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card .card-body p {
+    font-family:'Manrope', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: hsl(214, 17%, 51%);
+}
+
+.card .footer .footer1{
+    margin-bottom: 20px;
+}
+.card .footer .avatar-container {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.card .footer .avatar-container .avatar{
+    width: 100%;
+}
+
+.card .footer .text-footer {
+    display: inline-block;
+}
+
+.card .footer .text-footer h3{
+    font-weight: 700;
+    font-family:'Manrope', sans-serif; 
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px; 
+    color: hsl(217, 19%, 35%); 
+}
+
+.card .footer .text-footer p{
+    font-weight: 500;
+    font-family:'Manrope', sans-serif; 
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+}
+ 
+
+
+.card .footer .circle-icono {
+    border-radius: 50%;
+    background: no-repeat hsl(210, 46%, 95%) url('/images/icon-share.svg') center center;
+    width: 30px;
+    height: 30px; 
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+.card .footer .circle-icono img { display: none; }
+
+
+.footer.active .footer1{
+    display: none; 
+}
+
+.footer.active .footer2{
+    display: inline-block;
+    height: 75px;
+
+}
+
+.footer .footer2{
+    background-color:hsl(217, 19%, 35%);
+     display: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+} 
+.footer .footer2 .social{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+  
+}
+
+.footer .footer2 .social .share{
+    font-weight: 700;
+    font-family:'Manrope', sans-serif; 
+    font-weight: bold;
+    font-size: 15px;
+    color: hsl(210, 46%, 95%); 
+    float: left;
+    width: 35%;
+   
+  
+}
+.footer .footer2 .social .facebook{
+    float: left;
+    width: 15%;
+    height: auto;
+  
+   
+}
+.footer .footer2 .social .twitter{
+    float: left;
+    width: 15%;
+   
+}
+.footer .footer2 .social .pinterest{
+    float: left;
+    width: 15%;
+  
+}
+.footer .footer2 .social .circle-icono{
+    border-radius: 50%;
+    background: no-repeat hsl(210, 46%, 95%) url('/images/icon-share.svg') center center;
+    width: 30px;
+    height: 30px; 
+    cursor: pointer;
+    float: right;
+    position: relative;
+     top: -5px; 
+}
+
+
+@media all and (min-width: 972px){
+    .card {
+        width: 730px;
+        height: 230px;  
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: white;
+        position: relative;
+        top: 260px; 
+        overflow: hidden;  
+        
+       
+    }
+    
+ .card .card-header {
+     width: 287px;
+     float: left;
+     margin-bottom: 0px; 
+     position: relative; 
+     margin-right: 45px;
+}
+
+.card .card-header .img-card {
+ width: 100%;
+ height: 100%;
+}
+
+.card .card-body, .card .footer{
+    margin: 0 auto;
+}
+
+.card .card-body{
+    margin-left: 155px;
+    padding-top: 10px;
+}
+
+
+.card .card-body h2, p {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    
+} 
+  
+.card .card-body h2 {
+    font-family:'Manrope', sans-serif; 
+    font-weight: 700;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px; 
+    margin-top: 10px;
+
+}
+
+.card .card-body p {
+    font-family:'Manrope', sans-serif; 
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 20px; 
+}
+
+
+
+
+.footer.active .footer2{  
+    opacity: .9;
+    display: flex;
+    height: 60px;
+    width: 270px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: -148px;
+    overflow: visible;
+    position: relative;
+    right: -169px;
+}
+
+
+.footer.active .footer2:before {
+
+    
+    border: 25px solid hsl(217, 19%, 35%);
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -44px;
+    right: 100px;
+    transform: rotate(360deg);
+} 
+
+
+
+.card{
+    overflow: visible;
+}
+.footer.active .footer1{
+    display:block; 
+}
+
+.footer .footer2 .social .circle-icono{
+    display: none;
+}
+.footer .footer2 .social .share{
+margin-right: 29px;
+} 
+
+.footer .footer2 .social .facebook{
+    margin-right: 7px;
+
+}
+
+.footer .footer2 .social .twitter{
+    margin-right: 7px;
+    
+}
+
+
+}
