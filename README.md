@@ -29,11 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screen-shot.jpg)
 
 ### Links
 
-- Solution URL: [](https://github.com/fatimalvcruz/article-preview-challenge)
+- Solution URL: [Github](fatimalvcruz/article-preview-challenge)
+- Live Site URL: [Netlify](https://article-preview-challenge.netlify.app)
 
 
 ## My process

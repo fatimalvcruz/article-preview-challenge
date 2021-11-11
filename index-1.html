@@ -1,0 +1,119 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconocido </title></head><body>
+<h1 id="frontend-mentor-article-preview-component-solution">Frontend Mentor - Article preview component solution</h1>
+<p>This is a solution to the <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT">Article preview component challenge on Frontend Mentor</a>. Frontend Mentor challenges help you improve your coding skills by building realistic projects. </p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#the-challenge">The challenge</a></li>
+<li><a href="#screenshot">Screenshot</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#my-process">My process</a></li>
+<li><a href="#built-with">Built with</a></li>
+<li><a href="#what-i-learned">What I learned</a></li>
+<li><a href="#continued-development">Continued development</a></li>
+<li><a href="#useful-resources">Useful resources</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul>
+<p><strong>Note: Delete this note and update the table of contents based on what sections you keep.</strong></p>
+<h2 id="overview">Overview</h2>
+<h3 id="the-challenge">The challenge</h3>
+<p>Users should be able to:</p>
+<ul>
+<li>View the optimal layout for the component depending on their device's screen size</li>
+<li>See the social media share links when they click the share icon</li>
+</ul>
+<h3 id="screenshot">Screenshot</h3>
+<p><img alt="" src="./screenshot.jpg" /></p>
+<h3 id="links">Links</h3>
+<ul>
+<li>Solution URL: <a href="https://github.com/fatimalvcruz/article-preview-challenge"></a></li>
+</ul>
+<h2 id="my-process">My process</h2>
+<h3 id="built-with">Built with</h3>
+<ul>
+<li>Semantic HTML5 markup</li>
+<li>CSS custom properties</li>
+<li>Flexbox</li>
+<li>Mobile-first workflow</li>
+<li>Native JavaScript</li>
+</ul>
+<h3 id="what-i-learned">What I learned</h3>
+<p>In this project I learned how important it is to define a good structure in HTML in the first place, as it can help you to apply the style more easily later. I used the mobile-first strategy and applied different styles to the classes, I also used the specific images for this size. After that I used media@ to change some classes and images and to make my project responsive. The size I used with @media was a minimum width of 972px.</p>
+<p><code>css 
+@media all and (mind-width 972){}</code>
+I created a card structure in HTML and a header a body and footer for each elements of the card.</p>
+<p><code>html
+  &lt;div class="card"&gt;</code></p>
+<p>In the mobile view, the structure is vertical, so the different elements are placed one on top of the other. I calculated the width of the card, and placed it in the center of the screen.
+```css</p>
+<p>.card {
+    width: 88%;
+    min-width: 330px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 75px;
+    overflow: hidden;</p>
+<p>}
+```
+For the footer I used inline-block, since there were different images placed online, and two images with a round background, so I used overflow: hidden;</p>
+<p><code>css
+.card .footer .avatar-container {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-right: 15px;
+}</code>
+In desktop view, items are laid out horizontally, I used float to ubicated into the card. 
+<code>css
+ .card .card-header {
+     width: 287px;
+     float: left;
+     margin-bottom: 0px; 
+     position: relative; 
+     margin-right: 45px;
+}</code></p>
+<p>The second footer is different and when is unfold it's located over the main footer, I use flex to set it up.</p>
+<p>```css</p>
+<p>.footer.active .footer2{<br />
+    opacity: .9;
+    display: flex;
+    height: 60px;
+    width: 270px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: -148px;
+    overflow: visible;
+    position: relative;
+    right: -169px;
+}
+```</p>
+<p>To create the triangular shape below the footer, I created a new layer with: before.
+```css
+.footer.active .footer2:before {</p>
+<pre><code>border: 25px solid hsl(217, 19%, 35%);
+content: '';
+border-left-color: transparent;
+border-bottom-color: transparent;
+border-right-color: transparent;
+position: absolute;
+bottom: -44px;
+right: 100px;
+transform: rotate(360deg);
+</code></pre>
+<p>} 
+```</p>
+<p>For active the second footer I used native javascript  applying “for”  to cycle through all buttoms, then the function addEventListener with click event to active the toggle and this way show the second footter and to hide first.</p>
+<p>```js
+const button = document.querySelectorAll(".circle-icono");</p>
+<p>for(i=0; i<button.length ; i++){
+    button[i].addEventListener('click',()=> { 
+    document.querySelector(".footer").classList.toggle("active"); </p>
+<pre><code>})
+</code></pre>
+<p>}</p>
+</body></html>

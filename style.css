@@ -216,7 +216,7 @@ body{
 }
 
 
-@media all and (min-width: 972px){
+@media all and (min-width: 1024px){
     .card {
         width: 730px;
         height: 230px;  
